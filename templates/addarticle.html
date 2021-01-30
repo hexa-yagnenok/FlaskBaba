@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+{% from "./includes/formhelpers.html" import render_field %}
+<h3>Create Article</h3>
+<hr>
+<form method=post>
+<dl>
+{{ render_field(form.title,class="form-control") }}
+{{ render_field(form.content,class="form-control") }}
+</dl>
+<p><input class="btn btn-primary"   type=submit value=Share>
+<
+{% endblock body %}
